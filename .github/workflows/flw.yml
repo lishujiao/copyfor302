@@ -29,7 +29,7 @@ jobs:
       - name: npm install
         if: env.FL_flwURL
         run: |
-          cd ~/js
+          cd ~/copyfor302
           git checkout ZiYe
           npm install
       - name: '运行 【返利网】'
