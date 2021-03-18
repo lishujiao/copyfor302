@@ -3,7 +3,7 @@ name: 笑谱
 on:
   workflow_dispatch:
   schedule:
-     - cron: '*/12 * * * *'
+     - cron: '*/60 0-15 * * *'
   watch:
     types: started
 jobs:
@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone https://github.com/jrqzhx/copyfor302.git ~/copyfor302
+          git clone https://github.com/lishujiao/copyfor302.git ~/copyfor302
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
